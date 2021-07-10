@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+.body-1 {
+  background-image: url("https://www.oxfamindia.org/themes/custom/oxfamfrontend/css/newpage/images/girls-slider2.jpg");
+  width: 100%;
+  padding-bottom: 15px;
+}
+.body-2 {
+  background-image: url("https://www.smilefoundationindia.org/blog/wp-content/uploads/2021/01/108329279_3619886511368624_7060135223658488991_o.jpg");
+  width: 100%;
+  padding-bottom: 15px;
+}
+/*--------------    Navigation bar   --------------*/
+.nav-bar {
+  display: block;
+  position: sticky;
+  background-color: rgba(0, 0, 0, 0.26);
+  padding: 7px;
+  overflow: hidden;
+}
+.container {
+  flex-direction: row;
+  flex: 1;
+}
+ul {
+  padding-right: 3%;
+}
+li,
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 10%;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+.link {
+  padding: 5px 10px;
+  margin: 2px;
+  font-size: 20px;
+  color: white;
+}
+
+.link:hover {
+  background-color: rgba(7, 51, 90, 0.445);
+  width: 100%;
+  color: rgb(186, 253, 0);
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 2px rgba(141, 82, 82, 0.692);
+}
+.link:active {
+  color: white;
+  background-color: rgba(61, 73, 45, 0.671);
+  box-shadow: 0px 0px 2px 2px rgba(14, 23, 27, 0.692);
+}
+#head {
+  color: rgb(255, 0, 0);
+  font-size: 35px;
+  margin: 10px;
+  padding: 5px;
+}
+
+/* ----------      Donate Button div        --------- */
+.donate {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  align-items: center;
+  max-width: 40%;
+  background-color: rgba(40, 117, 131, 0.404);
+  border-radius: 10px;
+  margin: 1% auto;
+  text-align: center;
+  padding: 50px;
+}
+.donate p {
+  font-size: 140%;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: rgba(255, 0, 0, 0.863);
+}
+.sapling {
+  height: 50%;
+  width: 50%;
+}
+
+/* ----------------       About     ---------------- */
+.about {
+  font-size: 280%;
+  text-align: center;
+  padding: 13px;
+  color: rgb(255, 0, 0);
+  background-color: rgba(0, 0, 0, 0.356);
+}
+.img {
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  flex: 3;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 3%;
+}
+.about-img {
+  height: 30%;
+  width: 30%;
+  border-radius: 3%;
+}
+.about-container {
+  display: flex;
+  max-width: 70%;
+  flex-direction: row;
+  flex: 2;
+  align-items: center;
+  padding: 3%;
+  font-family: inherit;
+  margin: auto;
+}
+.about-container p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-top: 1%;
+  text-align: center;
+}
+/* ------------------ Footer ----------------- */
+footer {
+  text-align: center;
+  color: rgb(246, 247, 245);
+  font-weight: 700;
+}
+#home-link {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(254, 255, 249);
+  padding: 5px;
+}
+#home-link:hover {
+  color: white;
+}
+/* -------------------------- Responsiveness------------------- */
+@media only screen and (max-width: 640px) {
+  .nav {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  #head,
+  li,
+  .link {
+    font-size: 100%;
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+  .sapling {
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+  .img {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .about {
+    font-size: 125%;
+  }
+  .about-container p {
+    font-size: 100%;
+  }
+  .about-img {
+    height: 7.5rem;
+    width: 9.5rem;
+    padding: 10px;
+    border-radius: 1.2rem;
+  }
+  .donate p {
+    font-size: 100%;
+    font-weight: bold;
+  }
+  footer {
+    font-size: 100%;
+  }
+}
